@@ -20,6 +20,6 @@ jobs:
       run: make readme
 
     - name: update readme on master
-      run: git push 
+      run: git add -A . && git commit -m "test" && git push 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
