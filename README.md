@@ -3,7 +3,7 @@
 
 [![GeekHomeInside][logo]](https://github.com/GeekHomeInside/build-harness-readme-example/raw/master/docs/logo.jpeg)
 
-# Name of this project [![Build Status](https://github.com/geekhomeinside/build-harness-readme-example/workflows/main/badge.svg)](https://github.com/geekhomeinside/build-harness-readme-example/workflows/main/)
+# Name of this project [![Build Status](https://github.com/GeekHomeInside/build-harness-readme-example/actions/update_readme/badge.svg)](https://github.com/GeekHomeInside/build-harness-readme-example/actions)
 
 
 ![Name of this project](docs/logo.jpeg)
