@@ -1,10 +1,22 @@
-name: Readme
-on: [push, pull_request]
+name: Update Readme
+
+on: [push]
+
 jobs:
-  readme:
-    name: Readme
+  update-readme:
+    
     runs-on: ubuntu-latest
+
+    container:
+      image: docker://node:latest
+
     steps:
-      - uses: actions/checkout@v1.0.0
-      - name: Update README.md
-        run: make readme
+    - uses: actions/checkout@v1
+
+    - name: Install dependencies
+      run: npm install gomplate -D
+
+    - name: make README
+      run: make readme
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
