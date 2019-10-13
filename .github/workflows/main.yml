@@ -18,8 +18,8 @@ jobs:
     - name: Install gomplate
       run: go get github.com/hairyhenderson/gomplate/cmd/gomplate
 
-    - name: switch on master
-      run: git checkout origin master
+    - name: status on master
+      run: git status
 
     - name: make README
       run: make readme
