@@ -25,7 +25,7 @@ github_repo: GeekHomeInside/build-harness-readme-example
 # Badges to display
 badges:
   - name: "Build Status"
-    image: "https://github.com/GeekHomeInside/build-harness-readme-example/actions/update_readme/badge.svg"
+    image: "https://github.com/GeekHomeInside/build-harness-readme-example/workflows/update_readme/badge.svg"
     url: "https://github.com/GeekHomeInside/build-harness-readme-example/actions"
 
 # References
