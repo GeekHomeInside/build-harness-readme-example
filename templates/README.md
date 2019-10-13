@@ -315,12 +315,12 @@ Check out [our other projects][github], to help with your cloud strategy and imp
 [![README Footer][readme_footer_img]][readme_footer_link]
 [![Beacon][beacon]][website]
 
-  [logo]: https://cloudposse.com/logo-300x69.svg
-  [docs]: https://cpco.io/docs
-  [website]: https://cpco.io/homepage
-  [github]: https://cpco.io/github
-  [slack]: https://cpco.io/slack
-  [email]: https://cpco.io/email
+  [logo]: https://github.com/GeekHomeInside/build-harness-readme-example/raw/master/docs/logo.jpeg
+  [docs]: https://docs.geekhomeinside.io/en/
+  [website]: https://portfolio.geekhomeinside.com/
+  [github]: https://github.com/GeekHomeInside
+  [slack]: https://geekhomeinside.com/slack
+  [email]: guiadco@geekhomeinside.com
   [readme_header_img]: {{ printf "https://cloudposse.com/readme/header/img?repo=%s" (ds "config").github_repo }}
   [readme_header_link]: {{ printf "https://cloudposse.com/readme/header/link?repo=%s" (ds "config").github_repo }}
   [readme_footer_img]: {{ printf "https://cloudposse.com/readme/footer/img?repo=%s" (ds "config").github_repo }}
