@@ -1,0 +1,10 @@
+name: Readme
+on: [push, pull_request]
+jobs:
+  readme:
+    name: Readme
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1.0.0
+      - name: Update README.md
+        run: make readme
