@@ -18,17 +18,15 @@ jobs:
     - name: Install gomplate
       run: go get github.com/hairyhenderson/gomplate/cmd/gomplate
 
-    - name: switch on branch
-      run: git switch -c master
+    - name: switch on master
+      run: git checkout origin master
 
     - name: make README
       run: make readme
 
     - name: Commit files
-      run: |
-        git config --local user.email "guiadco@geekhomeinside.com"
-        git config --local user.name "GitHub Action - GuiAdCo"
-        git commit -m "Add changes" -a
+      run: git config --local user.email "guiadco@geekhomeinside.com" && git config --local user.name "GitHub Action - GuiAdCo" && git commit -m "Add changes" -a
+
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
