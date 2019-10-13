@@ -188,12 +188,12 @@ Check out [our other projects][github], to help with your cloud strategy and imp
 [![README Footer][readme_footer_img]][readme_footer_link]
 [![Beacon][beacon]][website]
 
-  [logo]: https://cloudposse.com/logo-300x69.svg
-  [docs]: https://cpco.io/docs
-  [website]: https://cpco.io/homepage
-  [github]: https://cpco.io/github
-  [slack]: https://cpco.io/slack
-  [email]: https://cpco.io/email
+  [logo]: https://github.com/GeekHomeInside/build-harness-readme-example/raw/master/docs/logo.jpeg
+  [docs]: https://docs.geekhomeinside.io/en/
+  [website]: https://portfolio.geekhomeinside.com/
+  [github]: https://github.com/GeekHomeInside
+  [slack]: https://geekhomeinside.com/slack
+  [email]: guiadco@geekhomeinside.com
   [readme_header_img]: https://cloudposse.com/readme/header/img?repo=GeekHomeInside/build-harness-readme-example
   [readme_header_link]: https://cloudposse.com/readme/header/link?repo=GeekHomeInside/build-harness-readme-example
   [readme_footer_img]: https://cloudposse.com/readme/footer/img?repo=GeekHomeInside/build-harness-readme-example
