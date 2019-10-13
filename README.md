@@ -8,7 +8,7 @@
  [![Build Status](https://github.com/geekhomeinside/build-harness-readme-example/workflows/main/badge.svg)](https://github.com/geekhomeinside/build-harness-readme-example/workflows/main/)
 
 
-![Build with @cloudposse/build-harness](https://camo.githubusercontent.com/ea7bf8436ec6db62eb5de645dab01e646ed4b445/68747470733a2f2f696d672e636c6f7564706f7373652e636f6d2f313530783135302f68747470733a2f2f6769746875622e636f6d2f6775696164636f2e706e67)
+![Build with @cloudposse/build-harness](docs/logo.jpeg)
 Short description of this project
 
 
