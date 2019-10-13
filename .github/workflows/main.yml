@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Install golang
-      run: sudo apt-get install golang-1.12.7-go
+      run: sudo snap install --classic go
 
     - name: Install gomplate
       run: go get github.com/hairyhenderson/gomplate/cmd/gomplate
