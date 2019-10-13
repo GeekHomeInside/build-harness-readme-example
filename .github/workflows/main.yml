@@ -15,9 +15,6 @@ jobs:
       with:
         ref: master
 
-    - name: Install golang
-      run: sudo snap install --classic go
-
     - name: Install gomplate
       run: go get github.com/hairyhenderson/gomplate/cmd/gomplate
 
