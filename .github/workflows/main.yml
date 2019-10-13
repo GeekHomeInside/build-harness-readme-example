@@ -18,6 +18,9 @@ jobs:
     - name: Install gomplate
       run: go get github.com/hairyhenderson/gomplate/cmd/gomplate
 
+    - name: switch on branch
+      run: git switch -c master
+
     - name: make README
       run: make readme
 
