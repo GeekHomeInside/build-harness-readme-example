@@ -20,6 +20,9 @@ jobs:
 
     - name: status on master
       run: git status
+    
+    - name: switch temp branch
+      run: git checkout -b temp
 
     - name: make README
       run: make readme
