@@ -3,12 +3,10 @@
 
 [![GeekHomeInside][logo]](https://github.com/GeekHomeInside/build-harness-readme-example/raw/master/docs/logo.jpeg)
 
-# Build with @cloudposse/build-harness
-
- [![Build Status](https://github.com/geekhomeinside/build-harness-readme-example/workflows/main/badge.svg)](https://github.com/geekhomeinside/build-harness-readme-example/workflows/main/)
+# Name of this project [![Build Status](https://github.com/geekhomeinside/build-harness-readme-example/workflows/main/badge.svg)](https://github.com/geekhomeinside/build-harness-readme-example/workflows/main/)
 
 
-![Build with @cloudposse/build-harness](docs/logo.jpeg)
+![Name of this project](docs/logo.jpeg)
 Short description of this project
 
 
@@ -55,7 +53,6 @@ Here's how to get started...
 ## Examples
 
 Here are some real world examples:
-- [`github-authorized-keys`](https://github.com/cloudposse/github-authorized-keys/) - A Golang project that leverages `docker/%`, `go/%`, `travis/%` targets
 
 
 

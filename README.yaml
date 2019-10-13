@@ -5,7 +5,7 @@
 #
 
 # Name of this project
-name: Build with @cloudposse/build-harness 
+name: Name of this project
 
 # Logo for this project
 logo: docs/logo.jpeg
@@ -55,7 +55,6 @@ usage: |-
 # Example usage
 examples: |-
   Here are some real world examples:
-  - [`github-authorized-keys`](https://github.com/cloudposse/github-authorized-keys/) - A Golang project that leverages `docker/%`, `go/%`, `travis/%` targets
 
 # How to get started quickly
 quickstart: |-
