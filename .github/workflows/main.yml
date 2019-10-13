@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: docker://node:latest
+      image: docker://golang:latest
 
     steps:
     - uses: actions/checkout@v1
 
-    - name: Install dependencies
-      run: npm install gomplate -D
+    - name: Install gomplate
+      run: go get github.com/hairyhenderson/gomplate/cmd/gomplate
 
     - name: make README
       run: make readme
