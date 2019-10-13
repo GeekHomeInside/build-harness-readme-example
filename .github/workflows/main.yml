@@ -11,17 +11,20 @@ jobs:
       image: docker://golang:latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkoutmaster
 
     - name: Install gomplate
       run: go get github.com/hairyhenderson/gomplate/cmd/gomplate
 
     - name: make README
       run: make readme
-    - name: contributor
-      run : git config --global user.name "guiadco" && git config --global user.email "guiadco@geekhomeinside.com"
 
-    - name: update readme on master
-      run: git add -A . && git commit -m "test" && git push -f
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Commit files
+      run: |
+        git config --local user.email "guiadco@geekhomeinside.com"
+        git config --local user.name "GitHub Action - GuiAdCo"
+        git commit -m "Add changes" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
