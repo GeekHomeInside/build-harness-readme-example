@@ -13,9 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: attach branch
-      run: git switch -
-
     - name: Install gomplate
       run: go get github.com/hairyhenderson/gomplate/cmd/gomplate
 
@@ -25,6 +22,6 @@ jobs:
       run : git config --global user.name "guiadco" && git config --global user.email "guiadco@geekhomeinside.com"
 
     - name: update readme on master
-      run: git add -A . && git commit -m "test" && git push
+      run: git add -A . && git commit -m "test" && git push -f
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
