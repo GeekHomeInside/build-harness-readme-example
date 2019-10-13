@@ -11,7 +11,7 @@ jobs:
       image: docker://golang:latest
 
     steps:
-    - uses: actions/checkoutmaster
+    - uses: actions/checkout@master
 
     - name: Install gomplate
       run: go get github.com/hairyhenderson/gomplate/cmd/gomplate
