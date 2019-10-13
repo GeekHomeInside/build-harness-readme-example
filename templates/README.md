@@ -17,18 +17,9 @@
 
 ---
 
-This project is part of our comprehensive ["SweetOps"](https://cpco.io/sweetops) approach towards DevOps. 
+This project is part of our comprehensive approach towards DevOps.
+
 [<img align="right" title="Share via Email" src="https://docs.cloudposse.com/images/ionicons/ios-email-outline-2.0.1-16x16-999999.svg"/>][share_email]
-[<img align="right" title="Share on Google+" src="https://docs.cloudposse.com/images/ionicons/social-googleplus-outline-2.0.1-16x16-999999.svg" />][share_googleplus]
-[<img align="right" title="Share on Facebook" src="https://docs.cloudposse.com/images/ionicons/social-facebook-outline-2.0.1-16x16-999999.svg" />][share_facebook]
-[<img align="right" title="Share on Reddit" src="https://docs.cloudposse.com/images/ionicons/social-reddit-outline-2.0.1-16x16-999999.svg" />][share_reddit]
-[<img align="right" title="Share on LinkedIn" src="https://docs.cloudposse.com/images/ionicons/social-linkedin-outline-2.0.1-16x16-999999.svg" />][share_linkedin]
-[<img align="right" title="Share on Twitter" src="https://docs.cloudposse.com/images/ionicons/social-twitter-outline-2.0.1-16x16-999999.svg" />][share_twitter]
-
-{{ if (file.Exists "main.tf") }}
-[![Terraform Open Source Modules](https://docs.cloudposse.com/images/terraform-open-source-modules.svg)][terraform_modules]
-{{end}}
-
 {{ if eq (ds "config").license "APACHE2" }}
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 {{ end }}
@@ -47,24 +38,21 @@ It's 100% Open Source and licensed under the [Internet Systems Consortium](LICEN
 It's 100% Open Source and licensed under the [GNU General Public License](LICENSE).
 {{ end }}
 
-{{ if (file.Exists "main.tf") }}
-We literally have [*hundreds of terraform modules*][terraform_modules] that are Open Source and well-maintained. Check them out! 
-{{end}}
-
-
-
 {{ if has (ds "config") "screenshots" }}
+
 ## Screenshots
 
 {{ range $screenshot := (ds "config").screenshots }}
 {{ printf "![%s](%s)\n*%s*" $screenshot.name $screenshot.url $screenshot.description }}{{ end }}
 {{ end }}
 {{ if has (ds "config") "introduction" }}
+
 ## Introduction
 
 {{ (ds "config").introduction -}}
 {{ end }}
 {{ if has (ds "config") "usage" }}
+
 ## Usage
 
 {{ if (file.Exists "main.tf") }}
@@ -76,12 +64,14 @@ Instead pin to the release tag (e.g. `?ref=tags/x.y.z`) of one of our [latest re
 {{ end }}
 
 {{ if has (ds "config") "quickstart" -}}
+
 ## Quick Start
 
 {{ (ds "config").quickstart -}}
 {{ end }}
 
 {{ if has (ds "config") "examples" }}
+
 ## Examples
 
 {{(ds "config").examples }}
@@ -94,12 +84,9 @@ Instead pin to the release tag (e.g. `?ref=tags/x.y.z`) of one of our [latest re
 {{- end }}
 {{ if has (ds "config") "related" }}
 
-## Share the Love 
+## Share the Love
 
-Like this project? Please give it a ★ on [our GitHub]({{ printf "https://github.com/%s" (ds "config").github_repo}})! (it helps us **a lot**) 
-
-Are you using this project or any of our other projects? Consider [leaving a testimonial][testimonial]. =)
-
+Like this project? Please give it a ★ on [our GitHub]({{ printf "https://github.com/%s" (ds "config").github_repo}})! (it helps us **a lot**)
 
 ## Related Projects
 
@@ -117,6 +104,7 @@ For additional context, refer to some of these links.
 {{ printf "- [%s](%s) - %s" $reference.name $reference.url $reference.description }}{{ end }}
 
 {{ end}}
+
 ## Help
 
 **Got a question?**
@@ -127,9 +115,9 @@ File a GitHub [issue]({{ printf "https://github.com/%s/issues" (ds "config").git
 
 ## Commercial Support
 
-Work directly with our team of DevOps experts via email, slack, and video conferencing. 
+Work directly with our team of DevOps experts via email, slack, and video conferencing.
 
-We provide [*commercial support*][commercial_support] for all of our [Open Source][github] projects. As a *Dedicated Support* customer, you have access to our team of subject matter experts at a fraction of the cost of a full-time engineer. 
+We provide [*commercial support*][commercial_support] for all of our [Open Source][github] projects. As a *Dedicated Support* customer, you have access to our team of subject matter experts at a fraction of the cost of a full-time engineer.
 
 [![E-Mail](https://img.shields.io/badge/guiadco@geekhomeinside-blue.svg)][email]
 
@@ -137,24 +125,12 @@ We provide [*commercial support*][commercial_support] for all of our [Open Sourc
 - **Troubleshooting.** We'll help you triage why things aren't working.
 - **Code Reviews.** We'll review your Pull Requests and provide constructive feedback.
 - **Bug Fixes.** We'll rapidly work to fix any bugs in our projects.
-- **Build New Terraform Modules.** We'll [develop original modules][module_development] to provision infrastructure.
 - **Cloud Architecture.** We'll assist with your cloud strategy and design.
-- **Implementation.** We'll provide hands-on support to implement our reference architectures. 
-
-
-{{ if (file.Exists "main.tf") }}
-## Terraform Module Development
-
-Are you interested in custom Terraform module development? Submit your inquiry using [our form][module_development] today and we'll get back to you ASAP.
-{{end}}
+- **Implementation.** We'll provide hands-on support to implement our reference architectures.
 
 ## Slack Community
 
 Join our [Open Source Community][slack] on Slack. It's **FREE** for everyone! Our "SweetOps" community is where you get to talk with others who share a similar vision for how to rollout and manage infrastructure. This is the best place to talk shop, ask questions, solicit feedback, and work together as a community to build totally *sweet* infrastructure.
-
-## Newsletter
-
-Signup for [our newsletter][newsletter] that covers everything on our technology radar.  Receive updates on what we're up to on GitHub as well as awesome new projects we discover. 
 
 ## Contributing
 
@@ -164,7 +140,7 @@ Please use the [issue tracker]({{ printf "https://github.com/%s/issues" (ds "con
 
 ### Developing
 
-If you are interested in being a contributor and want to get involved in developing this project or [help out](https://cpco.io/help-out) with our other projects, we would love to hear from you! Shoot us an [email][email].
+If you are interested in being a contributor and want to get involved in developing this project or with our other projects, we would love to hear from you! Shoot us an [email][email].
 
 In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
@@ -184,13 +160,15 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 {{ printf "Copyright © %s-%d [%s](%s)\n" $copyright.year time.Now.Year $copyright.name $copyright.url }}
 {{ end }}
 {{ else }}
+
 ## Copyright
 
-Copyright © 2017-{{ time.Now.Year }} [Cloud Posse, LLC](https://cpco.io/copyright)
+Copyright © 2019-{{ time.Now.Year }}
 {{ end}}
 
 {{ if eq (ds "config").license "APACHE2" }}
-## License 
+
+## License
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
 
@@ -214,7 +192,8 @@ See [LICENSE](LICENSE) for full details.
     under the License.
 {{ end }}
 {{ if eq (ds "config").license "CC-BY-NC-SA-4.0" }}
-## License 
+
+## License
 
 [![License](https://img.shields.io/badge/License-CC%20BY%20NC%20SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/) 
 
@@ -264,7 +243,8 @@ Source: <https://opensource.org/licenses/MIT>
 {{ end }}
 
 {{ if eq (ds "config").license "ISC" }}
-## License 
+
+## License
 
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
@@ -278,7 +258,8 @@ Source: <https://opensource.org/licenses/ISC>
 {{ end }}
 
 {{ if eq (ds "config").license "GPL3" }}
-## License 
+
+## License
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -305,18 +286,14 @@ All other trademarks referenced herein are the property of their respective owne
 
 ## About
 
-This project is maintained and funded by [Cloud Posse, LLC][website]. Like it? Please let us know by [leaving a testimonial][testimonial]!
+This project is maintained and funded by [GeekHomeInside][website].
 
-[![Cloud Posse][logo]][website]
+[![GeekHomeInside][logo]][website]
 
-We're a [DevOps Professional Services][hire] company based in Los Angeles, CA. We ❤️  [Open Source Software][we_love_open_source].
-
-We offer [paid support][commercial_support] on all of our projects.  
-
-Check out [our other projects][github], [follow us on twitter][twitter], [apply for a job][jobs], or [hire us][hire] to help with your cloud strategy and implementation.
-
+Check out [our other projects][github], to help with your cloud strategy and implementation.
 
 {{ if has (datasource "config") "contributors" }}
+
 ### Contributors
 
 | {{ range $contributor := (ds "config").contributors }}{{ printf " [![%s][%s_avatar]][%s_homepage]<br/>[%s][%s_homepage] |" $contributor.name $contributor.github $contributor.github $contributor.name $contributor.github}}{{ end }}
@@ -342,28 +319,9 @@ Check out [our other projects][github], [follow us on twitter][twitter], [apply 
   [docs]: https://cpco.io/docs
   [website]: https://cpco.io/homepage
   [github]: https://cpco.io/github
-  [jobs]: https://cpco.io/jobs
-  [hire]: https://cpco.io/hire
   [slack]: https://cpco.io/slack
-  [linkedin]: https://cpco.io/linkedin
-  [twitter]: https://cpco.io/twitter
-  [testimonial]: https://cpco.io/leave-testimonial
-  [newsletter]: https://cpco.io/newsletter
   [email]: https://cpco.io/email
-  [commercial_support]: https://cpco.io/commercial-support
-  [we_love_open_source]: https://cpco.io/we-love-open-source
-  [module_development]: https://cpco.io/module-development
-  [terraform_modules]: https://cpco.io/terraform-modules
   [readme_header_img]: {{ printf "https://cloudposse.com/readme/header/img?repo=%s" (ds "config").github_repo }}
   [readme_header_link]: {{ printf "https://cloudposse.com/readme/header/link?repo=%s" (ds "config").github_repo }}
   [readme_footer_img]: {{ printf "https://cloudposse.com/readme/footer/img?repo=%s" (ds "config").github_repo }}
   [readme_footer_link]: {{ printf "https://cloudposse.com/readme/footer/link?repo=%s" (ds "config").github_repo }}
-  [readme_commercial_support_img]: {{ printf "https://cloudposse.com/readme/commercial-support/img?repo=%s" (ds "config").github_repo }}
-  [readme_commercial_support_link]: {{ printf "https://cloudposse.com/readme/commercial-support/link?repo=%s" (ds "config").github_repo }}
-  [share_twitter]: {{ printf "https://twitter.com/intent/tweet/?text=%s&url=https://github.com/%s" ((ds "config").name | regexp.Replace " " "+") (ds "config").github_repo }}
-  [share_linkedin]: {{ printf "https://www.linkedin.com/shareArticle?mini=true&title=%s&url=https://github.com/%s" ((ds "config").name | regexp.Replace " " "+") (ds "config").github_repo }}
-  [share_reddit]: {{ printf "https://reddit.com/submit/?url=https://github.com/%s" (ds "config").github_repo }}
-  [share_facebook]: {{ printf "https://facebook.com/sharer/sharer.php?u=https://github.com/%s" (ds "config").github_repo }}
-  [share_googleplus]: {{ printf "https://plus.google.com/share?url=https://github.com/%s" (ds "config").github_repo }}
-  [share_email]: {{ printf "mailto:?subject=%s&body=https://github.com/%s" ((ds "config").name | regexp.Replace " " "+") (ds "config").github_repo }}
-  [beacon]: {{ printf "https://ga-beacon.cloudposse.com/UA-76589703-4/%s?pixel&cs=github&cm=readme&an=%s" (ds "config").github_repo (filepath.Base ((ds "config").github_repo)) }}
