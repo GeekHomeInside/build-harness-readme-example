@@ -5,11 +5,11 @@
 
 # Build with @cloudposse/build-harness
 
- [![Build Status](https://travis-ci.org/cloudposse/build-harness.svg?branch=master)](https://travis-ci.org/cloudposse/build-harness) [![Latest Release](https://img.shields.io/github/release/cloudposse/build-harness.svg)](https://github.com/cloudposse/build-harness/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
+ [![Build Status](https://github.com/geekhomeinside/build-harness-readme-example/workflows/main/badge.svg)](https://github.com/geekhomeinside/build-harness-readme-example/workflows/main/)
 
 
-This `build-harness` is a collection of Makefiles to facilitate building Golang projects, Dockerfiles, Helm charts, and more.
-It's designed to work with CI/CD systems such as Travis CI, CircleCI and Jenkins.
+![Build with @cloudposse/build-harness](https://camo.githubusercontent.com/ea7bf8436ec6db62eb5de645dab01e646ed4b445/68747470733a2f2f696d672e636c6f7564706f7373652e636f6d2f313530783135302f68747470733a2f2f6769746875622e636f6d2f6775696164636f2e706e67)
+Short description of this project
 
 
 ---
@@ -52,19 +52,7 @@ This is an introduction.
 
 
 
-At the top of your `Makefile` add, the following...
-
-```make
--include $(shell curl -sSL -o .build-harness "https://git.io/build-harness"; echo .build-harness)
-```
-
-This will download a `Makefile` called `.build-harness` and include it at run-time. We recommend adding the `.build-harness` file to your `.gitignore`.
-
-This automatically exposes many new targets that you can leverage throughout your build & CI/CD process.
-
-Run `make help` for a list of available targets.
-
-**NOTE:** the `/` is interchangable with the `:` in target names
+How to use this project
 
 ## Quick Start
 
@@ -75,9 +63,6 @@ Here's how to get started...
 
 Here are some real world examples:
 - [`github-authorized-keys`](https://github.com/cloudposse/github-authorized-keys/) - A Golang project that leverages `docker/%`, `go/%`, `travis/%` targets
-- [`charts`](https://github.com/cloudposse/charts/) - A collection of Helm Charts that leverages `docker/%` and `helm/%` targets
-- [`bastion`](https://github.com/cloudposse/bastion/) - A docker image that leverages `docker/%` and `bash/lint` targets
-- [`terraform-null-label`](https://github.com/cloudposse/terraform-null-label/) - A terraform module that leverages `terraform/%` targets
 
 
 
