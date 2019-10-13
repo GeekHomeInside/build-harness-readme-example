@@ -18,6 +18,8 @@ jobs:
 
     - name: make README
       run: make readme
+    - name: contributor
+      run : git config --global user.name "guiadco" && git config --global user.email "guiadco@geekhomeinside.com"
 
     - name: update readme on master
       run: git add -A . && git commit -m "test" && git push 
