@@ -111,13 +111,11 @@ For additional context, refer to some of these links.
 
 File a GitHub [issue]({{ printf "https://github.com/%s/issues" (ds "config").github_repo}}), send us an [email][email] or join our [Slack Community][slack].
 
-[![README Commercial Support][readme_commercial_support_img]][readme_commercial_support_link]
-
 ## Commercial Support
 
 Work directly with our team of DevOps experts via email, slack, and video conferencing.
 
-We provide [*commercial support*][commercial_support] for all of our [Open Source][github] projects. As a *Dedicated Support* customer, you have access to our team of subject matter experts at a fraction of the cost of a full-time engineer.
+We provide commercial_support for all of our [Open Source][github] projects. As a *Dedicated Support* customer, you have access to our team of subject matter experts at a fraction of the cost of a full-time engineer.
 
 [![E-Mail](https://img.shields.io/badge/guiadco@geekhomeinside-blue.svg)][email]
 
@@ -313,7 +311,6 @@ Check out [our other projects][github], to help with your cloud strategy and imp
 {{ end }}
 
 [![README Footer][readme_footer_img]][readme_footer_link]
-[![Beacon][beacon]][website]
 
   [logo]: https://github.com/GeekHomeInside/build-harness-readme-example/raw/master/docs/logo.jpeg
   [docs]: https://docs.geekhomeinside.io/en/
