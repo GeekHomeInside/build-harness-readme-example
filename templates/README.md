@@ -3,8 +3,6 @@
 {{- defineDatasource "includes" .Env.README_INCLUDES | regexp.Replace ".*" "" }}
 [![README Header][readme_header_img]][readme_header_link]
 
-[![GeekHomeInside][logo]](https://github.com/GeekHomeInside/build-harness-readme-example/raw/master/docs/logo.jpeg)
-
 # {{(ds "config").name}}{{ if gt (len (ds "config").name) 34 }}{{ print "\n\n" }}{{ end }}{{ if has (ds "config") "badges" }}{{- range $badge := (ds "config").badges -}}{{ printf " [![%s](%s)](%s)" $badge.name $badge.image $badge.url }}{{ end }}{{ end }}
 
 {{ if has (ds "config") "logo" }}

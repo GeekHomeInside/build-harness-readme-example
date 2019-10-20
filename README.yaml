@@ -1,14 +1,11 @@
 ---
-# 
+#
 # This is the canonical configuration for the `README.md`
 # Run `make readme` to rebuild the `README.md`
 #
 
 # Name of this project
 name: Name of this project
-
-# Logo for this project
-logo: docs/logo.jpeg
 
 # License of this project
 license: "MIT"
@@ -19,7 +16,7 @@ copyrights:
     url: "https://portfolio.geekhomeinside.com/"
     year: "2019"
 
-# Canonical GitHub repo 
+# Canonical GitHub repo
 github_repo: GeekHomeInside/build-harness-readme-example
 
 # Badges to display
@@ -39,7 +36,7 @@ screenshots:
   - name: "demo"
     description: "Example of using the `build-harness` to build a docker image"
     url: "https://cdn.rawgit.com/cloudposse/build-harness/master/docs/demo.svg"
- 
+
 # Short description of this project
 description: |-
   Short description of this project
