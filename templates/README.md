@@ -16,25 +16,23 @@
 
 This project is part of our comprehensive approach towards DevOps.
 
-{{ if eq (ds "config").license "APACHE2" }}
-It's 100% Open Source and licensed under the [MIT](LICENSE).
-{{ end }}
+{{ if (file.Exists "main.tf") }}
+[![Terraform Open Source Modules](https://docs.cloudposse.com/images/terraform-open-source-modules.svg)][terraform_modules]
+{{end}}
+
 
 {{ if has (ds "config") "screenshots" }}
-
 ## Screenshots
 
 {{ range $screenshot := (ds "config").screenshots }}
 {{ printf "![%s](%s)\n*%s*" $screenshot.name $screenshot.url $screenshot.description }}{{ end }}
 {{ end }}
 {{ if has (ds "config") "introduction" }}
-
 ## Introduction
 
 {{ (ds "config").introduction -}}
 {{ end }}
 {{ if has (ds "config") "usage" }}
-
 ## Usage
 
 {{ if (file.Exists "main.tf") }}
@@ -46,14 +44,12 @@ Instead pin to the release tag (e.g. `?ref=tags/x.y.z`) of one of our [latest re
 {{ end }}
 
 {{ if has (ds "config") "quickstart" -}}
-
 ## Quick Start
 
 {{ (ds "config").quickstart -}}
 {{ end }}
 
 {{ if has (ds "config") "examples" }}
-
 ## Examples
 
 {{(ds "config").examples }}
@@ -68,7 +64,7 @@ Instead pin to the release tag (e.g. `?ref=tags/x.y.z`) of one of our [latest re
 
 ## Share the Love
 
-Like this project? Please give it a ★ on [our GitHub]({{ printf "https://github.com/%s" (ds "config").github_repo}})! (it helps us **a lot**)
+Like this project? Please give it a ★ on [our GitHub]({{ printf "https://github.com/%s" (ds "config").github_repo}})! (it helps us **a lot**) 
 
 ## Related Projects
 
@@ -86,31 +82,11 @@ For additional context, refer to some of these links.
 {{ printf "- [%s](%s) - %s" $reference.name $reference.url $reference.description }}{{ end }}
 
 {{ end}}
-
 ## Help
 
 **Got a question?**
 
-File a GitHub [issue]({{ printf "https://github.com/%s/issues" (ds "config").github_repo}}), send us an [email][email] or join our [Slack Community][slack].
-
-## Commercial Support
-
-Work directly with our team of DevOps experts via email, slack, and video conferencing.
-
-We provide commercial_support for all of our [Open Source][github] projects. As a *Dedicated Support* customer, you have access to our team of subject matter experts at a fraction of the cost of a full-time engineer.
-
-[![E-Mail](https://img.shields.io/badge/guiadco@geekhomeinside-blue.svg)][email]
-
-- **Questions.** We'll use a Shared Slack channel between your team and ours.
-- **Troubleshooting.** We'll help you triage why things aren't working.
-- **Code Reviews.** We'll review your Pull Requests and provide constructive feedback.
-- **Bug Fixes.** We'll rapidly work to fix any bugs in our projects.
-- **Cloud Architecture.** We'll assist with your cloud strategy and design.
-- **Implementation.** We'll provide hands-on support to implement our reference architectures.
-
-## Slack Community
-
-Join our [Open Source Community][slack] on Slack. It's **FREE** for everyone! Our "SweetOps" community is where you get to talk with others who share a similar vision for how to rollout and manage infrastructure. This is the best place to talk shop, ask questions, solicit feedback, and work together as a community to build totally *sweet* infrastructure.
+File a GitHub [issue]({{ printf "https://github.com/%s/issues" (ds "config").github_repo}})
 
 ## Contributing
 
@@ -120,7 +96,7 @@ Please use the [issue tracker]({{ printf "https://github.com/%s/issues" (ds "con
 
 ### Developing
 
-If you are interested in being a contributor and want to get involved in developing this project or with our other projects, we would love to hear from you! Shoot us an [email][email].
+If you are interested in being a contributor and want to get involved in developing this project or [help out](https://cpco.io/help-out) with our other projects, we would love to hear from you! Shoot us an [email][email].
 
 In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
@@ -132,26 +108,6 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 **NOTE:** Be sure to merge the latest changes from "upstream" before making a pull request!
 
-{{ if has (ds "config") "copyrights" }}
-
-## Copyrights
-
-{{ range $copyright := (ds "config").copyrights -}}
-{{ printf "Copyright © %s-%d [%s](%s)\n" $copyright.year time.Now.Year $copyright.name $copyright.url }}
-{{ end }}
-{{ else }}
-
-## Copyright
-
-Copyright © 2019-{{ time.Now.Year }}
-{{ end}}
-
-{{ if eq (ds "config").license "APACHE2" }}
-
-## Trademarks
-
-All other trademarks referenced herein are the property of their respective owners.
-
 ## About
 
 This project is maintained and funded by [GeekHomeInside][website].
@@ -161,7 +117,6 @@ This project is maintained and funded by [GeekHomeInside][website].
 Check out [our other projects][github], to help with your cloud strategy and implementation.
 
 {{ if has (datasource "config") "contributors" }}
-
 ### Contributors
 
 | {{ range $contributor := (ds "config").contributors }}{{ printf " [![%s][%s_avatar]][%s_homepage]<br/>[%s][%s_homepage] |" $contributor.name $contributor.github $contributor.github $contributor.name $contributor.github}}{{ end }}

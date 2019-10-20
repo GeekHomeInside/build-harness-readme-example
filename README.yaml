@@ -10,9 +10,6 @@ name: Name of this project
 logo:
   - docs/logo.jpeg
 
-# License of this project
-license: "MIT"
-
 # Copyrights
 copyrights:
   - name: "GeekHomeInside"
