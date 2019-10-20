@@ -3,14 +3,14 @@
 # Name of this project [![Build Status](https://github.com/GeekHomeInside/build-harness-readme-example/workflows/update_readme/badge.svg)](https://github.com/GeekHomeInside/build-harness-readme-example/actions)
 
 
-![Name of this project]([docs/logo.jpeg])
+
+![Name of this project](docs/logo.jpeg)
 Short description of this project
 
 
 ---
 
 This project is part of our comprehensive approach towards DevOps.
-
 
 
 
