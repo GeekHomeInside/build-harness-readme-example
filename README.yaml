@@ -26,15 +26,15 @@ badges:
 
 # References
 references:
-  - name: "Wikipedia - Test Harness"
-    description: 'The `build-harness` is similar in concept to a "Test Harness"'
-    url: "https://en.wikipedia.org/wiki/Test_harness"
+  - name: "Portfolio GeekHomeInside"
+    description: "demo for references section"
+    url: "https://portfolio.geekhomeinside.com/"
 
 # Screenshots
 screenshots:
   - name: "demo"
-    description: "Example of using the `build-harness` to build a docker image"
-    url: "https://cdn.rawgit.com/cloudposse/build-harness/master/docs/demo.svg"
+    description: "Example of screenshots"
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Without_a_Trace.svg/673px-Without_a_Trace.svg.png"
 
 # Short description of this project
 description: |-

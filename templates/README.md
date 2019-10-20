@@ -16,12 +16,6 @@
 
 ---
 
-This project is part of our comprehensive approach towards DevOps.
-
-{{ if (file.Exists "main.tf") }}
-[![Terraform Open Source Modules](https://docs.cloudposse.com/images/terraform-open-source-modules.svg)][terraform_modules]
-{{end}}
-
 {{ if has (ds "config") "screenshots" }}
 ## Screenshots
 
@@ -65,7 +59,7 @@ Instead pin to the release tag (e.g. `?ref=tags/x.y.z`) of one of our [latest re
 
 ## Share the Love
 
-Like this project? Please give it a ★ on [our GitHub]({{ printf "https://github.com/%s" (ds "config").github_repo}})! (it helps us **a lot**) 
+Like this project? Please give it a ★ on [our GitHub]({{ printf "https://github.com/%s" (ds "config").github_repo}})! (it helps us **a lot**)
 
 ## Related Projects
 
@@ -78,7 +72,7 @@ Check out these related projects.
 
 ## References
 
-For additional context, refer to some of these links. 
+For additional context, refer to some of these links.
 {{ range $reference := (ds "config").references }}
 {{ printf "- [%s](%s) - %s" $reference.name $reference.url $reference.description }}{{ end }}
 
