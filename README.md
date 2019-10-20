@@ -10,16 +10,12 @@ Short description of this project
 
 ---
 
-This project is part of our comprehensive approach towards DevOps.
-
-
-
 
 ## Screenshots
 
 
-![demo](https://cdn.rawgit.com/cloudposse/build-harness/master/docs/demo.svg)
-*Example of using the `build-harness` to build a docker image*
+![demo](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Without_a_Trace.svg/673px-Without_a_Trace.svg.png)
+*Example of screenshots*
 
 
 ## Introduction
@@ -48,9 +44,9 @@ Here are some real world examples:
 
 ## References
 
-For additional context, refer to some of these links. 
+For additional context, refer to some of these links.
 
-- [Wikipedia - Test Harness](https://en.wikipedia.org/wiki/Test_harness) - The `build-harness` is similar in concept to a "Test Harness"
+- [Portfolio GeekHomeInside](https://portfolio.geekhomeinside.com/) - demo for references section
 
 
 ## Help
