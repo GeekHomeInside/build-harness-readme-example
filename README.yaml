@@ -7,8 +7,7 @@
 # Name of this project
 name: Name of this project
 
-logo:
-  - docs/logo.jpeg
+logo: docs/logo.jpeg
 
 # Copyrights
 copyrights:
